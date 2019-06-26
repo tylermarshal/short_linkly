@@ -41,7 +41,7 @@ bundle install
 
 ### postgresql
 
-If you have not already install postgresql
+If you have not already have postgresql installed
 
 ```shell
 brew install postgresql
