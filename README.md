@@ -31,7 +31,7 @@ For the second deliverable, a test suite has not been previously written.
 - Implement an analytics endpoint, which takes an encoded id and renders the short link, the long link, and the number of times the short link has been accessed.
 - Please use the following URI pattern: `/:id/analytics`
 
-You will have 2 hours to complete this project, after which you will present and explain your work. Err on the side of completeness of individual features, over completing all features. You can use any tools you'd like. Thanks in advance for taking the time do do this exercise!
+Please spend no more than 2 hours to complete this project. Err on the side of completeness of individual features, over completing all features. You can use any tools you'd like. Thanks in advance for taking the time do do this exercise!
 
 ## Setup
 
