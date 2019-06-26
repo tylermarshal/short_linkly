@@ -5,13 +5,15 @@ RSpec.describe ShortLinksController, type: :controller do
     let!(:short_link) { create(:short_link) }
     let(:request) { get :show, params: { id: short_link.encoded_id, user_id: 1 } }
 
-    it 'responds with a 301' do
-      request
-      expect(response).to have_http_status(:moved_permanently)
-    end
+    context 'with a valid short link' do
+      it 'responds with a 301' do
+        request
+        expect(response).to have_http_status(:moved_permanently)
+      end
 
-    it 'redirects to the long_url' do
-      expect(request).to redirect_to(short_link.long_link)
+      it 'redirects to the long_url' do
+        expect(request).to redirect_to(short_link.long_link)
+      end
     end
 
     context 'with a missing short_link' do
