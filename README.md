@@ -6,14 +6,14 @@ Built with Rails 5.2.3 and Ruby 2.5.1
 
 This app is an unfinished URL shortening service, similar to [bit.ly](https://bitly.com/). For the first deliverable, a completed test suite has been written out for you. Please do not change any existing tests; you will need to write your code in order to pass the test suite.
 
-- You will implement unique shortened URLs for users.
+- You will implement unique encoded shortened URLs for users (the existing tests should clear up how to encode URLs).
 - All short links require a unique long link and user_id.
 - Here is an example request to your service:
 
 ```
 POST http://localhost:8080/short_link
 {
-  "long_url": "<long_url>",
+  "long_link": "<long_link>",
   "user_id": "<user_id>"
 }
 ```
@@ -21,7 +21,7 @@ POST http://localhost:8080/short_link
 
 ```
 {
-  "long_url": "<long_url>",
+  "long_link": "<long_link>",
   "short_link": "<short_link>"
 }
 ```
